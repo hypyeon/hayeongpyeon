@@ -13,8 +13,10 @@
     - language available : English, Korean, Chinese
 2. Menu 
     - map of my life 
-    - what do i do for clients 
-    - websites I have made so far
+    - what do i do for clients & send me an email
+    - resume send link
+    - support
+    - donation info
 
 ## Design 
 - Home : simple, easy, many transitions
