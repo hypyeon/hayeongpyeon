@@ -43,78 +43,188 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
 
+@font-face {
+    font-family: 'Kite One';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/kiteone/v8/70lQu7shLnA_E02vyp1c4njkOJuB.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Londrina Outline';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/londrinaoutline/v11/C8c44dM8vmb14dfsZxhetg3pDH-STu07rACPHvM.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+@font-face {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/robotomono/v12/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW-AJi8SJQt.woff) format('woff');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+@font-face {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/chakrapetch/v4/cIflMapbsEk7TDLdtEz1BwkeNIh1R5_F_gUk0w.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+@font-face {
+    font-family: 'Josefin Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/josefinslab/v12/lW-swjwOK3Ps5GSJlNNkMalNpiZe_ldbOR4W71msR349LIKZAyOw3w.woff) format('woff');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Montserrat Subrayada';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserratsubrayada/v10/U9MM6c-o9H7PgjlTHThBnNHGVUORwteQQHe3TfMRiXnV61by.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
 html {
 
 }
 
 body {
-    background-image: url("");
-    background-color: rgb(221, 197, 252);
-    background-size: 100%;
+    background-image: url('./images/background-nightsky.jpg');
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: 0;
 }
 
 #logo {
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 700;
-    font-size: 12rem;
-    text-align: center;
-    color: snow;
-    line-height: 0.7em;
-    text-shadow: 6px 6px rgb(135, 250, 212);
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-weight: 500;
+    font-size: 7.5rem;
+    display: flex;
+    justify-content: center;
+    color: rgb(3, 3, 3);
+    line-height: 0.8em;
+    margin-top: 30px;
+    text-shadow: 2px 2px black;
+    animation: logo 2s infinite;
 }
 
-p {
-    margin-block: 1.45em;
+@keyframes logo {
+  0% {
+    text-shadow: 2px 2px black, 0px 0px 15px rgb(255, 211, 253), 0 0 70px rgb(219, 252, 35);
+  }
+  25% {
+    text-shadow: 2px 2px black, 0px 0px 30px rgb(255, 211, 253), 0 0 50px rgb(219, 252, 35);
+  }
+  50%% {
+    text-shadow: 2px 2px black, 0px 0px 15px rgb(255, 211, 253), 0 0 70px rgb(219, 252, 35);
+  }
+  100% {
+    text-shadow: 2px 2px black, 0px 0px 30px rgb(255, 211, 253), 0 0 50px rgb(219, 252, 35);
+  }
 }
 
-#logo #yeon {
-    color: rgb(167, 83, 247);
+body .coding {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.9rem;
+  line-height: 1.35rem;
+  padding: 40px;
+  border-radius: 20px;
+  border: 8px solid rgb(250, 246, 246);
+  width: fit-content;
+  margin-left: 30%;
+  margin-right: 28%;
+  bottom: -27.5rem;
+  z-index: 5;
+  position: fixed;
+  transition: all 250ms ease-in-out;
 }
 
-#logo span {
-    transition-property: color;
-    transition-timing-function: ease-in;
-    transition-duration: 200ms;
+body .coding:hover {
+  bottom: 0;
 }
 
-#logo span:hover {
-    color: rgb(167, 83, 247);
+.coding #blue {
+  color: rgb(6, 255, 222);
+}
+.coding #yellow {
+  color: rgb(230, 255, 4);
+}
+.coding #red {
+  color: rgb(197, 5, 255);
+}
+.coding #green {
+  color: rgb(253, 92, 213);
 }
 
-#logo #yeon:hover {
-    color: rgb(253, 236, 5);
+.bar ul li a {
+  text-decoration: none;
+  color: black;
+  text-shadow: 0.5px 0.5px white, 0px 0px 20px white, 0px 0px 5px rgb(255, 155, 247);
+  font-family: 'Josefin Sans', serif;
+  font-weight: 700;
+  font-size: 2rem;
 }
 
-.work {
-    background-image: url('./images/background-work2.jpg');
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    background-size: 100% 100%;
-    height: fit-content;
-    margin-left: 20px;
-    margin-right: 20px;
+.bar ul li a:hover {
+  color: aliceblue;
 }
 
-.work p {
-    font-family: 'Sedgwick Ave', cursive;
-    color: white;
-    font-size: 6rem;
-    width: fit-content;
-    margin-left: 800px;
-    margin-top: 3.4rem;
-    padding-top: 230px;
-    padding-bottom: 230px;
-    display: flexbox;
+.bar ul li {
+  display: inline-flex;
+  padding: 55px;
 }
 
-.work #creative {
-}
-.work #concise {
-    margin-left: 100px;
+.bar {
+  width: fit-content;
+  margin: auto;
 }
 
-.work #efficient {
-    margin-left: 200px;
-    
+.arrow{
+  position: absolute;
+  bottom: 76px;
+  transform: translate(-50%,-50%);
+  margin-left: 50%;
+}
+
+.arrow span{
+  display: block;
+  width: 13px;
+  height: 13px;
+  border-bottom: 5px solid #fafbfc;
+  border-right: 5px solid #fafbfc;
+  margin: -12px;
+  animation: animate 1.5s infinite;
+}
+.arrow span:nth-child(2){
+  animation-delay: -0.2s;
+}
+
+@keyframes animate {
+  0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px,-20px);
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(20px,20px);
+  }
 }
