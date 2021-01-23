@@ -102,8 +102,8 @@ html {
 }
 
 body {
-    background-image: url('./images/background-nightsky.jpg');
-    background-color: black;
+    background-image: url('');
+    background-color: rgb(1, 4, 51);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
@@ -112,7 +112,7 @@ body {
 #logo {
     font-family: 'Montserrat Subrayada', sans-serif;
     font-weight: 500;
-    font-size: 7.5rem;
+    font-size: 5rem;
     display: flex;
     justify-content: center;
     color: rgb(3, 3, 3);
