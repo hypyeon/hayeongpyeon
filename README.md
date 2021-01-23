@@ -15,8 +15,6 @@
     - map of my life 
     - what do i do for clients & send me an email
     - resume send link
-    - support
-    - donation info
 
 ## Design 
 - Home : simple, easy, many transitions
