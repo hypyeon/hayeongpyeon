@@ -3,7 +3,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
-    background-color: rgb(255, 235, 255);
+    background-color: rgb(255, 241, 255);
 }
 
 .home .myname, .contact {
@@ -11,16 +11,24 @@ body {
 }
 
 .home .myname h1 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  font-size: 24px;
   transform: rotate(-90deg);
   float: left;
   padding: 20px;
   margin: 0;
-  line-height: 1.15rem;
-  margin-top: 30px;
+  line-height: 1.35rem;
+  margin-top: 70px;
+  display: inline-block;
 }
 
 .myname h1 span {
   color: rgb(34, 184, 164);
+}
+
+.myname {
+  width: fit-content;
 }
 
 #contact {
@@ -33,35 +41,44 @@ body {
 
 .contact {
   position: absolute;
-  bottom: 30px;
+  bottom: 10px;
 }
 
 .contact ul {
-  margin: 0;
+  margin-left: 15px;
 }
 
 .home .contact ul li {
-  padding: 5px 0;
+  padding: 10px 0;
 }
 
 .screen img {
-  width: 50%;
-  height: auto;
-  
+  position: absolute;
+  width: 54%;
+  margin: auto;
+  left: 23%;
 }
 
-body .coding {
-  background-color: rgb(0, 0, 0);
+.grid {
+  position: relative;
+  display: grid;
+  width: 51%;
+  height: 426px;
+  grid-template-columns: 62% 38%;
+  grid-template-rows: 1fr;
+  margin: auto;
+  left: 52.5px;
+  top: 23px;
+}
+
+.grid .coding {
+
+  background-color: black;
   color: white;
   font-family: 'Roboto Mono', monospace;
-  font-size: 0.9rem;
-  line-height: 1.35rem;
-  padding: 40px;
-  border-radius: 20px;
-  border: 8px solid rgb(250, 246, 246);
-  width: fit-content;
-  margin-left: 30%;
-  margin-right: 28%;
+  font-size: 13px;
+  line-height: 1.15rem;
+  padding: 15px 20px;
 }
 
 .coding #blue {
@@ -77,47 +94,260 @@ body .coding {
   color: rgb(253, 92, 213);
 }
 
+.screen .typing {
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'Roboto Mono', monospace;
+  padding: 20px 20px;
+}
+
+.typing p {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.typing p:nth-child(1) {
+  width: 80%;
+  animation: t1 1s steps(30, end);
+  animation-fill-mode: forwards;
+}
+
+.typing p:nth-child(2) {
+  width: 70%;
+  opacity: 0;
+  animation: t2 1s steps(30, end);
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.typing p:nth-child(3) {
+  width: 100%;
+  opacity: 0;
+  animation: t3 1s steps(30, end);
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.typing p:nth-child(4) {
+  width: 100%;
+  opacity: 0;
+  animation: t4 1s steps(30, end);
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+.typing p:nth-child(5) {
+  width: 80%;
+  opacity: 0;
+  animation: t5 1s steps(30, end);
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+.typing p:nth-child(6) {
+  width: 80%;
+  opacity: 0;
+  animation: t6 1s steps(30, end);
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+.typing p:nth-child(7) {
+  width: 90%;
+  opacity: 0;
+  animation: t7 1s steps(30, end);
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+
+.typing p:nth-child(8) {
+  width: 80%;
+  opacity: 0;
+  animation: t8 1s steps(30, end);
+  animation-delay: 7s;
+  animation-fill-mode: forwards;
+}
+
+.typing p:nth-child(9) {
+  width: 80%;
+  opacity: 0;
+  animation: t9 1s steps(30, end), 
+  blink .5s step-end infinite alternate;
+  border-right: .15em solid green;
+  animation-delay: 8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes t1 {
+  0% {
+    width: 0;
+    border-right: .15em solid green;
+  }
+  99.9% {
+    border-right: .15em solid green;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes t2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid green;
+  }
+  100% {
+    border: none;
+    opacity: 1;
+  }
+}
+
+@keyframes t3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid green;
+  }
+  100% {
+    border: none;
+    opacity: 1;
+  }
+}
+
+@keyframes t4 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid green;
+  }
+  100% {
+    border: none;
+    opacity: 1;
+  }
+}
+
+@keyframes t5 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid green;
+  }
+  100% {
+    border: none;
+    opacity: 1;
+  }
+}
+
+@keyframes t6 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid green;
+  }
+  100% {
+    border: none;
+    opacity: 1;
+  }
+}
+
+@keyframes t7 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid green;
+  }
+  100% {
+    border: none;
+    opacity: 1;
+  }
+}
+
+@keyframes t8 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid green;
+  }
+  100% {
+    border: none;
+    opacity: 1;
+  }
+}
+
+@keyframes t9 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid green;
+  }
+  100% {
+    border: none;
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 .bar ul li a {
   text-decoration: none;
+  color: white;
+  font-family: monospace;
 }
 
 .bar ul li {
-  padding: 55px;
+  padding: 30px;
+  margin: 0;
 }
 
-.arrow{
-  position: absolute;
-  bottom: 76px;
-  transform: translate(-50%,-50%);
-  margin-left: 50%;
+.bar ul {
+  padding-left: 10px;
 }
 
-.arrow span{
-  display: block;
-  width: 13px;
-  height: 13px;
-  border-bottom: 5px solid #fafbfc;
-  border-right: 5px solid #fafbfc;
-  margin: -12px;
-  animation: animate 1.5s infinite;
-}
-.arrow span:nth-child(2){
-  animation-delay: -0.2s;
+.bar {
+  float: right;
+  background-color: cadetblue;
 }
 
-@keyframes animate {
-  0%{
-      opacity: 0;
-      transform: rotate(45deg) translate(-20px,-20px);
-  }
-  50%{
-      opacity: 1;
-  }
-  100%{
-      opacity: 0;
-      transform: rotate(45deg) translate(20px,20px);
-  }
-}
+
 
 @media only screen and (width: 360px) and (height: 640px) {
   
